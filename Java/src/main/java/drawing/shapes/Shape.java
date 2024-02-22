@@ -27,6 +27,8 @@ public interface Shape {
         try {
             for (Line line : lines) {
                 // TODO: what is the purpose of the code there?
+                // Maybe we could create a converter interface and use strategy pattern to convert the line to different format.
+                // And passing 
                 if (writer instanceof JPEGWriter) {
                     writer.write(line.toJPEG());
                 } else if (writer instanceof PNGWriter) {
